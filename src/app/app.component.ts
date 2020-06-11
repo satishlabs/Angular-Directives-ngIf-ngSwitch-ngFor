@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Lab8';
+  courseName: string;
+  mycourse: string;
+  mycourses: string[];
+
+  constructor(){
+    this.courseName = "";
+    this.mycourse = "";
+    this.mycourses = ['Java','Angular','ReactJS','MongoDB','NodeJS'];
+  }
+
 }
